@@ -14,6 +14,7 @@ type chromaticCapture struct {
 }
 
 func (c *chromaticCapture) CreateBuild(ctx context.Context, in *pb.BuildRequest) (*pb.BuildResponse, error) {
+	log.Printf("Received: %v", in.String())
 	return &pb.BuildResponse{
 		Status: "TODO",
 	}, nil
