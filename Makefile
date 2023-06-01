@@ -1,19 +1,13 @@
 generate: generate-ts generate-go
 
 generate-ts:
-	# generate js codes via grpc-tools
-	cd ./client && yarn run grpc_tools_node_protoc \
-	--js_out=import_style=commonjs,binary:./ \
-	--grpc_out=grpc_js:./ \
-	--plugin=protoc-gen-grpc=./node_modules/.bin/grpc_tools_node_protoc_plugin \
-	-I ../ \
-	build.proto
-
-	# generate d.ts codes
 	protoc \
 	--plugin=protoc-gen-ts=./client/node_modules/.bin/protoc-gen-ts \
-	--ts_out=grpc_js:./client/ \
-	-I ./ \
+	--ts_opt=unary_rpc_promise=true \
+	--ts_opt=no_namespace \
+	--ts_opt=json_names \
+	--ts_out=./client/ \
+	-I=./ \
 	build.proto
 
 generate-go:

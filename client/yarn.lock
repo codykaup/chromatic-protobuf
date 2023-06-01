@@ -134,6 +134,11 @@
   resolved "https://registry.yarnpkg.com/@tsconfig/node16/-/node16-1.0.4.tgz#0b92dcc0cc1c81f6f306a381f28e31b1a56536e9"
   integrity sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==
 
+"@types/google-protobuf@^3.15.6":
+  version "3.15.6"
+  resolved "https://registry.yarnpkg.com/@types/google-protobuf/-/google-protobuf-3.15.6.tgz#674a69493ef2c849b95eafe69167ea59079eb504"
+  integrity sha512-pYVNNJ+winC4aek+lZp93sIKxnXt5qMkuKmaqS3WGuTq0Bw1ZDYNBgzG5kkdtwcv+GmYJGo3yEg6z2cKKAiEdw==
+
 "@types/long@^4.0.1":
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/@types/long/-/long-4.0.2.tgz#b74129719fc8d11c01868010082d483b7545591a"
@@ -534,6 +539,11 @@ protobufjs@^7.0.0:
     "@types/node" ">=13.7.0"
     long "^5.0.0"
 
+protoc-gen-ts@^0.8.6:
+  version "0.8.6"
+  resolved "https://registry.yarnpkg.com/protoc-gen-ts/-/protoc-gen-ts-0.8.6.tgz#e789a6fc3fbe09bdc119acecc349b9554ec5940e"
+  integrity sha512-66oeorGy4QBvYjQGd/gaeOYyFqKyRmRgTpofmnw8buMG0P7A0jQjoKSvKJz5h5tNUaVkIzvGBUTRVGakrhhwpA==
+
 readable-stream@^3.6.0:
   version "3.6.2"
   resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-3.6.2.tgz#56a9b36ea965c00c5a93ef31eb111a0f11056967"
@@ -646,10 +656,10 @@ ts-node@^10.9.1:
     v8-compile-cache-lib "^3.0.1"
     yn "3.1.1"
 
-typescript@^5.0.4:
-  version "5.0.4"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.0.4.tgz#b217fd20119bd61a94d4011274e0ab369058da3b"
-  integrity sha512-cW9T5W9xY37cc+jfEnaUvX91foxtHkza3Nw3wkoF4sSlKn0MONdkdEndig/qPBWXNkmplh3NzayQzCiHM4/hqw==
+typescript@^4.9.5:
+  version "4.9.5"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.9.5.tgz#095979f9bcc0d09da324d58d03ce8f8374cbe65a"
+  integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
 
 uglify-js@^3.1.4:
   version "3.17.4"
